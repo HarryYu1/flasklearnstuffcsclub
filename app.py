@@ -1,4 +1,5 @@
 from flask import Flask
+from flask import render_template
 
 app = Flask(__name__)
 
@@ -8,4 +9,4 @@ def hello_world():
 
 @app.route("/index")
 def show_index():
-    return "This is the index!"
+    return render_template('confirmation.html')
