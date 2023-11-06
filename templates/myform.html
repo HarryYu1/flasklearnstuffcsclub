@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <form action="" method="post" role="form" id="form_attendance">
+        {{ form.name.label }} {{ form.name() }}
+
+        {{ form.submit() }}
+
+        {{ form.csrf_token }}
+
+</body>
+</html>
